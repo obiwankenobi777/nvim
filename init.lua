@@ -20,7 +20,7 @@ vim.opt.textwidth = 80
 vim.opt.cursorline = true
 vim.opt.showtabline = 0
 vim.opt.ruler = true
-vim.opt.rulerformat = "%15(%p%%\\ %l/%L\\ %c%V%)"
+vim.opt.rulerformat = "%15(%p%% %l/%L %c%V%)"
 vim.opt.laststatus = 2
 vim.opt.autowrite = true
 vim.opt.background = "dark"
@@ -99,3 +99,4 @@ map("i", ")", function() return skip_closing(")") end, { expr = true })
 map("i", "]", function() return skip_closing("]") end, { expr = true })
 map("i", "}", function() return skip_closing("}") end, { expr = true })
 
+-- ============================================================================
