@@ -1,6 +1,7 @@
 -- ============================================================================
 -- GLOBAL SETs
 -- ============================================================================
+
 vim.opt.shortmess:append("I")
 vim.cmd("syntax on")
 vim.opt.tabstop = 4
@@ -25,10 +26,8 @@ vim.opt.autowrite = true
 vim.opt.background = "dark"
 vim.opt.wildmenu = true
 vim.opt.swapfile = false
-vim.cmd("colorscheme wildcharm") 
---vim.opt.guicursor = "n-v-c-sm:block"
 vim.opt.guicursor = "n-v-c-sm-i-ci-ve-r-cr-o:block"
-
+vim.cmd("colorscheme wildcharm") 
 
 -- ============================================================================
 -- MAPS
