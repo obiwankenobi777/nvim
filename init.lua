@@ -104,11 +104,9 @@ map("v", "\\", "~")
 
 -- ============================================================================
 
--- Caminho do lazy
 local lazypath = vim.fn.stdpath("config") .. "/lazy/lazy.nvim"
 vim.opt.rtp:prepend(lazypath)
 
--- Iniciar Lazy e carregar plugins
 require("lazy").setup({
   {
     "nvim-telescope/telescope.nvim",
