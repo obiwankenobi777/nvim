@@ -61,48 +61,6 @@ map("i", "`", "``<Left>")
 map("v", "\\", "~")
 
 -- ============================================================================
--- AUTOPAIRS
--- ============================================================================
---
---local function autopairs(char)
---    local pairs = {
---        ["("] = ")",
---        ["["] = "]",
---        ["{"] = "}",
---        ['"'] = '"',
---        ["'"] = "'",
---    }
---    local close = pairs[char]
---    if close then
---        return char .. close .. "<Left>"
---    else
---        return char
---    end
---end
---
---local function skip_closing(char)
---    local col = vim.fn.col(".")
---    local line = vim.fn.getline(".")
---    local next_char = line:sub(col, col)
---    if next_char == char then
---        return "<Right>"
---    else
---        return char
---    end
---end
---
----- Insert mode mappings with expr
---map("i", "(", function() return autopairs("(") end, { expr = true })
---map("i", "[", function() return autopairs("[") end, { expr = true })
---map("i", "{", function() return autopairs("{") end, { expr = true })
---map("i", '"', function() return autopairs('"') end, { expr = true })
---map("i", "'", function() return autopairs("'") end, { expr = true })
---
---map("i", ")", function() return skip_closing(")") end, { expr = true })
---map("i", "]", function() return skip_closing("]") end, { expr = true })
---map("i", "}", function() return skip_closing("}") end, { expr = true })
-
--- ============================================================================
 -- LAZY
 -- ============================================================================
 
@@ -154,5 +112,6 @@ require("lazy").setup({
 
 vim.keymap.set("n", "<C-n>", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
 
+-- ============================================================================
 -- ============================================================================
 
