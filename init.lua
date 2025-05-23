@@ -85,7 +85,7 @@ require("lazy").setup({
   {
     "nvim-tree/nvim-tree.lua",
     dependencies = {
-      "nvim-tree/nvim-web-devicons" -- Ícones bonitos nos arquivos
+      "nvim-tree/nvim-web-devicons" 
     },
     config = function()
       require("nvim-tree").setup({})
@@ -93,11 +93,11 @@ require("lazy").setup({
   },
   {
     "nvim-lualine/lualine.nvim",
-    dependencies = { "nvim-tree/nvim-web-devicons" }, -- ícones na statusline
+    dependencies = { "nvim-tree/nvim-web-devicons" },
     config = function()
       require("lualine").setup({
         options = {
-          theme = "auto",     -- usa tema conforme seu colorscheme
+          theme = "auto",     
           section_separators = { left = "", right = "" },
           component_separators = { left = "", right = "" },
         }
