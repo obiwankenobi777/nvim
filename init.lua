@@ -27,8 +27,8 @@ vim.opt.background = "dark"
 vim.opt.wildmenu = true
 vim.opt.swapfile = false
 vim.opt.guicursor = "n-v-c-sm-i-ci-ve-r-cr-o:block"
-vim.cmd("color wildcharm") 
 vim.o.hlsearch = false
+vim.cmd("color default") 
 
 
 -- ============================================================================
