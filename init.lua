@@ -28,7 +28,6 @@ vim.opt.wildmenu = true
 vim.opt.swapfile = false
 vim.opt.guicursor = "n-v-c-sm-i-ci-ve-r-cr-o:block"
 vim.o.hlsearch = false
-vim.cmd("color default") 
 
 
 -- ============================================================================
@@ -97,7 +96,7 @@ require("lazy").setup({
     "nvim-lualine/lualine.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     config = function()
-      require("lualine").setup({
+    require("lualine").setup({
         options = {
           theme = "auto",     
           section_separators = { left = "", right = "" },
@@ -105,7 +104,41 @@ require("lazy").setup({
         }
       })
     end
-  }
+  },
+  {
+      "folke/tokyonight.nvim",
+      lazy = false,
+      priority = 1000,
+      config = function()
+--      vim.cmd("colorscheme tokyonight-night")
+      end,
+    },
+    {
+      "rose-pine/neovim",
+      name = "rose-pine",
+      lazy = false,
+      priority = 1000,
+      config = function()
+--        vim.cmd("colorscheme rose-pine-main") -- ou 'rose-pine-moon'
+      end,
+    },
+    {
+      "nyoom-engineering/oxocarbon.nvim",
+      lazy = false,
+      priority = 1000,
+      config = function()
+        vim.cmd("colorscheme oxocarbon")
+      end,
+    },
+    {
+      "sainnhe/everforest",
+      lazy = false,
+      priority = 1000,
+      config = function()
+        vim.g.everforest_background = "hard"
+--        vim.cmd("colorscheme everforest")
+      end,
+    },
 })
 
 -- ============================================================================
