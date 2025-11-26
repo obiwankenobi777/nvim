@@ -4,15 +4,9 @@
 
 local map = vim.keymap.set
 
--- vim.g.mapleader = "-"
-
 -- NORMAL
-map("n", "<leader>ev", ":vsplit $MYVIMRC<cr>")
-map("n", "<leader>sv", ":source $MYVIMRC<cr>")
-map("n", "<leader><space>", 'viw<esc>a"<esc>hbi"<esc>lel')
-map("n", "<leader>w", ":w<cr>")
-map("n", "<leader>q", ":q<cr>")
-map("n", "<leader>d", "dd")
+map("n", "-<space>", 'viw<esc>a"<esc>hbi"<esc>lel')
+-- map("n", "-w", ":w<cr>")
 map("n", "<space>", "viw")
 
 -- window
@@ -36,10 +30,6 @@ map("n", "gl", "$")
 map("n", "gh", "0")
 map("n", "gg", "gg0")
 
--- copy/paste
-map("n", "<leader>c", '"ayy')
-map("n", "<leader>v", '"ap')
-
 -- INSERT
 map("i", "jk", "<ESC>")
 map("i", "<C-u>", "<ESC>gUiwea")
@@ -48,5 +38,3 @@ map("i", "<C-b>", "<ESC>ba")
 map("i", "<C-o>", "<ESC>O")
 map("i", "<C-d>", "<ESC>ddi")
 
--- VISUAL
-map("v", "\\", "~")

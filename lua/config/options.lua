@@ -26,7 +26,6 @@ opt.textwidth = 80
 
 opt.mouse = "n"
 
---opt.rulerformat = "%15(%p%% %l/%L %c%V%)"
 opt.showtabline = 0
 opt.ruler = true
 opt.laststatus = 2
