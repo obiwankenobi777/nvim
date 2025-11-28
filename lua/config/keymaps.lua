@@ -5,8 +5,9 @@
 local map = vim.keymap.set
 
 --- NORMAL
-map("n", "-<space>", 'viw<esc>a"<esc>hbi"<esc>lel')
-map("n", "<space>", "viw")
+map("n", "-w", ":w")
+-- map("n", "-<space>", 'viw<esc>a"<esc>hbi"<esc>lel')
+-- map("n", "<space>", "viw")
 
 --- window
 map("n", "<C-h>", "<C-w><C-h>")
