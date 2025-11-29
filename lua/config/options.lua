@@ -1,46 +1,43 @@
--- Options are automatically loaded before lazy.nvim startup
--- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
--- Add any additional options here
+-- vim.options are automatically loaded before lazy.nvim startup
+-- Default vim.options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
+-- Add any additional vim.options here
 
-local opt = vim.opt
-local cmd = vim.cmd
-
-opt.shortmess:append("I")
-cmd("syntax on")
+vim.opt.shortmess:append("I")
+vim.cmd("syntax on")
 
 -- identation
-opt.tabstop = 4
-opt.softtabstop = 4
-opt.shiftwidth = 4
-opt.expandtab = true
-opt.autoindent = true
-opt.smartindent = true
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+vim.opt.autoindent = true
+vim.opt.smartindent = true
 
 -- search
-opt.incsearch = true
-opt.smartcase = true
+vim.opt.incsearch = true
+vim.opt.smartcase = true
 
 -- automatic writing
-opt.autowrite = true
-opt.autoread = true
+vim.opt.autowrite = true
+vim.opt.autoread = true
 
 -- codification
-opt.encoding = "UTF-8"
-opt.textwidth = 80
+vim.opt.encoding = "UTF-8"
+vim.opt.textwidth = 80
 
 -- mouse
-opt.mouse = "n"
+vim.opt.mouse = "n"
 
 -- status bar
-opt.showtabline = 0
-opt.ruler = true
-opt.laststatus = 2
+vim.opt.showtabline = 0
+vim.opt.ruler = true
+vim.opt.laststatus = 2
 
 -- interface
-opt.number = true
-opt.numberwidth = 7
-opt.relativenumber = true
-opt.cursorline = true
-opt.background = "dark"
-opt.termguicolors = true
-opt.guicursor = "n-v-c-sm-i-ci-ve-r-cr-o:block"
+vim.opt.number = true
+vim.opt.numberwidth = 7
+vim.opt.relativenumber = true
+vim.opt.cursorline = true
+vim.opt.background = "dark"
+vim.opt.termguicolors = true
+vim.opt.guicursor = "n-v-c-sm-i-ci-ve-r-cr-o:block"
