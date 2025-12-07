@@ -18,10 +18,10 @@ vim.keymap.set("n", "<C-l>", "<C-w><C-l>")
 vim.keymap.set("n", "<C-x>", "<C-w><C-x>")
 
 --- buffers
-vim.keymap.set("n", "nn", ":bnext<CR>")
-vim.keymap.set("n", "np", ":bprevious<CR>")
-vim.keymap.set("n", "nd", ":bdelete<CR>")
-vim.keymap.set("n", "nls", ":ls<CR>")
+-- vim.keymap.set("n", "wn", ":bnext<CR>")
+-- vim.keymap.set("n", "wp", ":bprevious<CR>")
+-- vim.keymap.set("n", "wd", ":bdelete<CR>")
+-- vim.keymap.set("n", "wls", ":ls<CR>")
 
 --- movement
 vim.keymap.set("n", "ge", "G")
