@@ -11,17 +11,17 @@ vim.keymap.set("n", "-<space>", 'viw<esc>a"<esc>hbi"<esc>lel')
 vim.keymap.set("n", "<space>", "viw")
 
 --- window
-vim.keymap.set("n", "<C-h>", "<C-w><C-h>")
-vim.keymap.set("n", "<C-j>", "<C-w><C-j>")
-vim.keymap.set("n", "<C-k>", "<C-w><C-k>")
-vim.keymap.set("n", "<C-l>", "<C-w><C-l>")
-vim.keymap.set("n", "<C-x>", "<C-w><C-x>")
+vim.keymap.set("n", "<c-h>", "<c-w><c-h>")
+vim.keymap.set("n", "<c-j>", "<c-w><c-j>")
+vim.keymap.set("n", "<c-k>", "<c-w><c-k>")
+vim.keymap.set("n", "<c-l>", "<c-w><c-l>")
+vim.keymap.set("n", "<c-x>", "<c-w><c-x>")
 
 --- buffers
--- vim.keymap.set("n", "wn", ":bnext<CR>")
--- vim.keymap.set("n", "wp", ":bprevious<CR>")
--- vim.keymap.set("n", "wd", ":bdelete<CR>")
--- vim.keymap.set("n", "wls", ":ls<CR>")
+-- vim.keymap.set("n", "wn", ":bnext<cr>")
+-- vim.keymap.set("n", "wp", ":bprevious<cr>")
+-- vim.keymap.set("n", "wd", ":bdelete<cr>")
+-- vim.keymap.set("n", "wls", ":ls<cr>")
 
 --- movement
 vim.keymap.set("n", "ge", "G")
@@ -30,9 +30,9 @@ vim.keymap.set("n", "gh", "0")
 vim.keymap.set("n", "gg", "gg0")
 
 --- INSERT
-vim.keymap.set("i", "jk", "<ESC>")
-vim.keymap.set("i", "<C-u>", "<ESC>gUiwea")
-vim.keymap.set("i", "<C-l>", "<ESC>la")
-vim.keymap.set("i", "<C-b>", "<ESC>ba")
-vim.keymap.set("i", "<C-o>", "<ESC>O")
-vim.keymap.set("i", "<C-d>", "<ESC>ddi")
+vim.keymap.set("i", "jk", "<esc>")
+vim.keymap.set("i", "<c-u>", "<esc>guiwea")
+vim.keymap.set("i", "<c-l>", "<esc>la")
+vim.keymap.set("i", "<c-b>", "<esc>ba")
+vim.keymap.set("i", "<c-o>", "<esc>o")
+vim.keymap.set("i", "<c-d>", "<esc>ddi")
