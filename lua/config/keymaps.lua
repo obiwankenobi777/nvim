@@ -32,7 +32,7 @@ vim.keymap.set("n", "gg", "gg0")
 
 --- INSERT
 vim.keymap.set("i", "jk", "<esc>")
-vim.keymap.set("i", "<c-u>", "<esc>guiwea")
+vim.keymap.set("i", "<c-u>", "<esc>gUiwea")
 vim.keymap.set("i", "<c-l>", "<esc>la")
 vim.keymap.set("i", "<c-b>", "<esc>ba")
 vim.keymap.set("i", "<c-o>", "<esc>o")
