@@ -18,6 +18,7 @@ vim.keymap.set("n", "<c-l>", "<c-w><c-l>")
 vim.keymap.set("n", "<c-x>", "<c-w><c-x>")
 
 --- buffers
+vim.keymap.set("n", "gn", ":bnext<cr>")
 -- vim.keymap.set("n", "wn", ":bnext<cr>")
 -- vim.keymap.set("n", "wp", ":bprevious<cr>")
 -- vim.keymap.set("n", "wd", ":bdelete<cr>")
