@@ -24,7 +24,7 @@ vim.keymap.set("n", "gh", "0")
 vim.keymap.set("n", "gg", "gg0")
 vim.keymap.set("n", "gn", ":bnext<cr>")
 
---- INSERT
+--- INSERT MODE
 vim.keymap.set("i", "jk", "<esc>")
 vim.keymap.set("i", "<c-u>", "<esc>gUiwea")
 vim.keymap.set("i", "<c-l>", "<esc>la")
