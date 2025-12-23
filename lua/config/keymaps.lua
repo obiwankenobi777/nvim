@@ -8,7 +8,7 @@ vim.keymap.set("n", "-q", ":q<cr>")
 vim.keymap.set("n", "-x", ":x<cr>")
 vim.keymap.set("n", "-d", "dd")
 vim.keymap.set("n", "-<space>", 'viw<esc>a"<esc>hbi"<esc>lel')
-vim.keymap.set("n", "<space>", "viw")
+-- vim.keymap.set("n", "-", "viw")
 
 --- window
 vim.keymap.set("n", "<c-h>", "<c-w><c-h>")
